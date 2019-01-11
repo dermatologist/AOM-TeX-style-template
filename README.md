@@ -1,4 +1,18 @@
 # TeX template for Academy of Management style
-This is a TeX template for paper submissions to the Academy of Management (AOM) conference. It adheres to most of the style guidelines detailed [here](http://aom.org/annualmeeting/submission/guidelines/#paperguideline), however it is not currently complete (see current [PDF output](https://github.com/stroube/AOM-TeX-style-template/blob/master/AOM_style_template.pdf?raw=true)). Updates and fixes are welcome. It is currently formatted in Times New Roman with one-inch margins, includes a submission ID header, allows for defining hypotheses in block indented italics, and properly formats the three different levels of AOM headings using the standard `section`,  `subsection`, and `subsubsection` LaTeX commands. All tables and figures are automatically placed at the end of the paper after the references. The goal is to make conversion of your existing LaTeX documents as easy as possible.
+This is a TeX template for paper submissions to the Academy of Management (AOM) conference. It adheres to most of the style guidelines detailed [here](http://aom.org/annualmeeting/submission/guidelines/#paperguideline).
 
-Note: the current version was typeset and tested with [XeLaTex](http://www.xelatex.org/), and uses packages such as `fontspec` which require XeTeX or LuaTeX. I believe these are already included with most modern distributions of TeX, so you need only to choose the appropriate option when typesetting.
+
+## Changes from parent repo
+
+```
+%\usepackage{fontspec}
+%\setmainfont{Times New Roman}
+\usepackage{times}
+\usepackage{graphicx}
+
+
+```
+
+## How to cite
+
+Use \citep{} for normal citations and \citet{} for inline citations.
